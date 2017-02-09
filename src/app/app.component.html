@@ -1,4 +1,7 @@
 <h1>
   {{title}}
 </h1>
+<nav>
+  <a routerLink="/login" (click)="logout()" *ngIf="authService.isLoggedIn">Log out</a>
+</nav>
 <router-outlet></router-outlet>
