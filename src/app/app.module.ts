@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from './auth/auth.module';
+import { DisplaysModule } from './displays/displays.module';
+import { MarketplaceModule } from './marketplace/marketplace.module';
+import { MediaModule } from './media/media.module';
 
 import { AppComponent } from './app.component';
 
@@ -16,7 +19,10 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    DisplaysModule,
+    MarketplaceModule,
+    MediaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
