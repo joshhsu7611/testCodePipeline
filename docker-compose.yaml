@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ooha-app:
+    build: .
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/code
+  ubuntu:
+    image: "ubuntu:14.04"
