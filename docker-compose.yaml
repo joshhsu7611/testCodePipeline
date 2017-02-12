@@ -4,7 +4,6 @@ services:
     build: .
     ports:
       - "4200:4200"
+      - "49153:49153"
     volumes:
       - .:/code
-  ubuntu:
-    image: "ubuntu:14.04"
