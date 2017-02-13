@@ -29,3 +29,17 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# Use Docker To Build Development Environment
+
+## Install Docker
+[Install Docker Engine](https://docs.docker.com/engine/installation/)
+
+## Build Docker Image
+Run `docker-compose build` to build docker image
+
+## Start Docker Container
+Run `docker-compose up -d` to start docker container. Navigate to `http://localhost:4200`.
+
+## Run Bash on Docker Container
+Run `docker-compose exec ooha-app bash` to execute bash on docker container
