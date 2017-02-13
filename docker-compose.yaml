@@ -7,4 +7,4 @@ services:
       - "49153:49153"
     volumes:
       - .:/ooha-app
-    command: ng serve --host 0.0.0.0 --port 4200
+      - /ooha-app/node_modules
