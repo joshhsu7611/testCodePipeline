@@ -6,7 +6,7 @@ import { MediaService } from '../media.service';
 @Component({
   selector: 'app-media',
   templateUrl: './media.component.html',
-  styleUrls: ['./media.component.less']
+  styleUrls: ['./media.component.sass']
 })
 export class MediaComponent implements OnInit {
   media: Media[] = [];

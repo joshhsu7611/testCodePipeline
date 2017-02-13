@@ -6,7 +6,7 @@ import { AuthService } from './auth/auth.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
   title = 'app works!';
