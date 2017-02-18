@@ -9,9 +9,11 @@ import { AuthService } from './auth/auth.service';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'app works!';
+  title: string;
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private authService: AuthService, private router: Router) {
+    this.title = 'app works!';
+  }
 
   logout() {
     this.authService.logout();
