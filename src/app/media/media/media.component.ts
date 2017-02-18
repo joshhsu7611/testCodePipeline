@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Media } from '../media';
+import { Media } from '../media.model';
 import { MediaService } from '../media.service';
 
 @Component({
@@ -9,9 +9,11 @@ import { MediaService } from '../media.service';
   styleUrls: ['./media.component.sass']
 })
 export class MediaComponent implements OnInit {
-  media: Media[] = [];
+  media: Media[];
 
-  constructor(private mediaService: MediaService) { }
+  constructor(private mediaService: MediaService) {
+    this.media = [];
+  }
 
   getMedia(): void {
     this.mediaService.getMedia().then(media => this.media = media);

@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 
-import { Media } from './media';
+import { Media } from './media.model';
 
 @Injectable()
 export class MediaService {
-  private mediaCache: Media[] = [];
+  private mediaCache: Media[];
 
-  constructor() { }
+  constructor() {
+    this.mediaCache = [];
+  }
 
   getMedia(): Promise<Media[]> {
     if (this.mediaCache.length !== 0) {

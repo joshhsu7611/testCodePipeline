@@ -1,6 +1,6 @@
 /* tslint:disable:no-unused-variable */
+import { async, inject, TestBed } from '@angular/core/testing';
 
-import { TestBed, async, inject } from '@angular/core/testing';
 import { AuthService } from './auth.service';
 
 describe('AuthService', () => {
