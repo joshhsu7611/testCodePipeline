@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { MediaComponent } from './media.component';
+import { MediaService } from '../media.service';
 
 describe('MediaComponent', () => {
   let component: MediaComponent;
@@ -11,7 +12,8 @@ describe('MediaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MediaComponent ]
+      declarations: [ MediaComponent ],
+      providers: [ MediaService ]
     })
     .compileComponents();
   }));
