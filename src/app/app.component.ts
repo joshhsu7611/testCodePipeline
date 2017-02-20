@@ -15,7 +15,11 @@ export class AppComponent {
     this.title = 'app works!';
   }
 
-  logout() {
+  loginCheck(): boolean {
+    return this.authService.loginCheck();
+  }
+
+  logout(): void {
     this.authService.logout();
   }
 }

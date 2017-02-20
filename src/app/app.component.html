@@ -5,6 +5,6 @@
   <a routerLink="/marketplace">Marketplace</a>
   <a routerLink="/media">Media</a>
   <a routerLink="/displays">Displays</a>
-  <a routerLink="/login" (click)="logout()" *ngIf="authService.isLoggedIn">Log out</a>
+  <a routerLink="/login" (click)="logout()" *ngIf="loginCheck()">Log out</a>
 </nav>
 <router-outlet></router-outlet>
