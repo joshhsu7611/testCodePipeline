@@ -5,7 +5,7 @@ import { MediaService } from '../../media/media.service';
 @Component({
   selector: 'app-displays',
   templateUrl: './displays.component.html',
-  styleUrls: ['./displays.component.sass']
+  styleUrls: ['./displays.component.scss']
 })
 export class DisplaysComponent implements OnInit {
 
