@@ -5,7 +5,9 @@ machine:
 ## Customize dependencies
 dependencies:
   override:
-    - docker-compose build
+   - docker-compose --version
+   - pip install docker-compose
+   - docker-compose build
     - npm install -g yarn
     - yarn global add @angular/cli
     - yarn
