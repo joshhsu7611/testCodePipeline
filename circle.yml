@@ -5,14 +5,13 @@ machine:
 ## Customize dependencies
 dependencies:
   override:
-   - docker-compose build
+    - docker pull josh7611/ooha-app:latest
 
 compile:
   override:
-    - docker-compose up
-
+    - ls
     
 test:
   override:
-    - docker-compose run ooha-app ng test --single-run
+    - docker run -rm -it josh7611/ooha-app ng test --single-run
 
