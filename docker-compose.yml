@@ -1,10 +1,8 @@
-version: '2'
-services:
-  ooha-app:
-    build: .
-    ports:
-      - "4200:4200"
-      - "49153:49153"
-    volumes:
-      - .:/ooha-app
-      - /ooha-app/node_modules
+ooha-app:
+  build: .
+  ports:
+    - "4200:4200"
+    - "49153:49153"
+  volumes:
+    - .:/ooha-app
+    - /ooha-app/node_modules
