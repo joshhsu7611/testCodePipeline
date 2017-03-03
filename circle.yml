@@ -8,9 +8,9 @@ dependencies:
    - docker-compose --version
    - pip install docker-compose
    - docker-compose build
-    - npm install -g yarn
-    - yarn global add @angular/cli
-    - yarn
+   - npm install -g yarn
+   - yarn global add @angular/cli
+   - yarn
 
 compile:
   override:
