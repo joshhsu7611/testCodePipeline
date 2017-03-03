@@ -6,7 +6,7 @@ machine:
 
 ## Customize dependencies
 dependencies:
-  pre:
+  override:
     - npm install -g yarn
     - yarn global add @angular/cli
     - yarn
@@ -15,3 +15,8 @@ dependencies:
 compile
   override:
     - ng build
+    
+test:
+  override:
+    - ng test --single-run
+
