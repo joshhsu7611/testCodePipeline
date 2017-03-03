@@ -14,5 +14,5 @@ compile:
     
 test:
   override:
-    - docker-compose exec ooha-app ng test --single-run
+    - docker-compose run ooha-app ng test --single-run
 
