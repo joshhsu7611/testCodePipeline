@@ -5,8 +5,10 @@ machine:
 ## Customize dependencies
 dependencies:
   override:
+   - sudo apt-get update
+   - sudo apt-get install curl
+   - curl -fsSL https://get.docker.com/ | sh
    - docker-compose --version
-   - pip install docker-compose
    - docker-compose build
 
 compile:
