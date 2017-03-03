@@ -1,0 +1,17 @@
+## Customize the test machine
+machine:
+
+  node:
+    version: v6.1.0
+
+## Customize dependencies
+dependencies:
+  pre:
+    - npm install -g yarn
+    - yarn global add @angular/cli
+    - yarn
+
+
+compile
+  override:
+    - ng build
