@@ -1,6 +1,7 @@
 machine:
   services:
     - docker
+    - docker-compose build
 
 ## Customize dependencies
 dependencies:
