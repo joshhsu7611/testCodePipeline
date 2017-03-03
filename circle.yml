@@ -9,6 +9,9 @@ dependencies:
     - yarn global add @angular/cli
     - yarn
 
+compile:
+  override:
+    - ng build
 
     
 test:
