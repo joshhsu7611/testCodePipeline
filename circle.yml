@@ -8,16 +8,13 @@ dependencies:
    - docker-compose --version
    - pip install docker-compose
    - docker-compose build
-   - npm install -g yarn
-   - yarn global add @angular/cli
-   - yarn
 
 compile:
   override:
-    - ng build
+    - docker-compose up
 
     
 test:
   override:
-    - ng test --single-run
+    - docker-compose exec ooha-app ng test --single-run
 
