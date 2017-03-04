@@ -7,7 +7,8 @@ machine:
 ## Customize dependencies
 dependencies:
   override:
-    - docker pull josh7611/ooha-app:latest
+    - docker info
+    - docker build --rm=false -t ooha/ooha-app .
 
 compile:
   override:
@@ -15,5 +16,5 @@ compile:
     
 test:
   override:
-    - docker run --rm -it josh7611/ooha-app ng test --single-run
+    - docker run --rm -it ooha/ooha-app ng test --single-run
 
