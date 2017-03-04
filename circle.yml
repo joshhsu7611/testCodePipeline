@@ -1,8 +1,6 @@
 machine:
   pre:
     - curl -sSL https://s3.amazonaws.com/circle-downloads/install-circleci-docker.sh | bash -s -- 1.10.0
-    - sudo curl -L https://github.com/docker/compose/releases/download/1.11.1/run.sh > /usr/local/bin/docker-compose
-    - sudo chmod +x /usr/local/bin/docker-compose
     - docker-compose --version
     - docker-compose up -d
   services:
@@ -11,6 +9,7 @@ machine:
 ## Customize dependencies
 dependencies:
   override:
+    - docker-compose up -d
     - docker info
     - docker-compose exec ooha-app build
   #  - docker build --rm=false -t ooha/ooha-app .
