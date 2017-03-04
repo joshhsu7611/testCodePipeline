@@ -1,4 +1,6 @@
 machine:
+  pre:
+    - curl -sSL https://s3.amazonaws.com/circle-downloads/install-circleci-docker.sh | bash -s -- 1.10.0
   services:
     - docker
 
@@ -13,5 +15,5 @@ compile:
     
 test:
   override:
-    - docker run -rm -it josh7611/ooha-app ng test --single-run
+    - docker run --rm -it josh7611/ooha-app ng test --single-run
 
